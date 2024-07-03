@@ -11,9 +11,14 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    // It maintains its unique state for each object created from this class
+    // It is accessible through any non-static method within the same class
+    String instanceVariable = "This is a global variable";
+
     // Define a variable named TAG to identify the source of the log messages, typically set to the name of the current class.
     private static final String TAG = "MainActivity";
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,5 +60,18 @@ public class MainActivity extends AppCompatActivity {
         Log.w(TAG, "Warning log message"); // Log a warning message, useful for indicating potential issues.
         Log.e(TAG, "Error log message"); // Log an error message, useful for indicating errors that occur during execution.
 
+        calculateArea(58, 178);
+        variableTest();
     }
+
+    public void calculateArea(int base, int height) {
+        // Local variable. It can only be accessed within the method in which it is defined.
+        int area = (base * height) / 2;
+        System.out.println("The area of the triangle is: " + area + " cm²");
+    }
+
+    public void variableTest(){
+        System.out.println(instanceVariable);
+    }
+
 }
