@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         float price = 19.9f;
         // Float numbers must be followed by an 'f' or 'F' to differentiate them from double
 
+        // Double precision floating-point data type, occupying 64 bits.
+        // It is more accurate than float and is used to represent decimal numbers when greater precision is required.
+        double piDouble = 3.141592653589793;
+
         boolean isAvailable = true;
 
         String productName = "Product A";
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Price: " + price);
         System.out.println("Is Available: " + isAvailable);
         System.out.println("Product Name: " + productName);
+        System.out.println("Pi: " + piDouble);
 
     }
 }
