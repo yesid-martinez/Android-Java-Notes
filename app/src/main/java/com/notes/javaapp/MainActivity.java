@@ -6,10 +6,13 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+//It brings the functionality of the Log class from the android.util package
+import android.util.Log;
+
 public class MainActivity extends AppCompatActivity {
 
     // Define a variable named TAG to identify the source of the log messages, typically set to the name of the current class.
-//    private static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivity";
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Is Available: " + isAvailable);
         System.out.println("Product Name: " + productName);
         System.out.println("Pi: " + piDouble);
+
+
+        // Use the Android Log class to log messages at different log levels:
+        Log.v(TAG, "Verbose log message"); // Log a verbose message, useful for detailed information during development.
+        Log.d(TAG, "Debug log message"); // Log a debug message, useful for debugging purposes.
+        Log.i(TAG, "Info log message"); // Log an informational message, useful for providing general information about app operation.
+        Log.w(TAG, "Warning log message"); // Log a warning message, useful for indicating potential issues.
+        Log.e(TAG, "Error log message"); // Log an error message, useful for indicating errors that occur during execution.
 
     }
 }
