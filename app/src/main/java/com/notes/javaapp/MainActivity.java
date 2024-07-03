@@ -24,12 +24,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Primitive data type. It is 16 bits long
+        // Represents an 8-bit integer numeric value
+        byte age = 25;
+
+        // Represents a 16-bit Unicode character value
         // Can store any valid Unicode character, including letters, digits, symbols, and special characters
         char gender = 'M';
         // To avoid errors, make sure that char variables contain only one character
 
-        // Its size depends on the number of bits used to store them
+        // Represents a 32-bit integer numeric value
         int availableProducts = 10;
 
         // Represents a 32-bit floating-point numeric value
@@ -41,16 +44,20 @@ public class MainActivity extends AppCompatActivity {
         // It is more accurate than float and is used to represent decimal numbers when greater precision is required.
         double piDouble = 3.141592653589793;
 
+        // Represents a 64-bit integer numeric value
+        long phoneNumber = 1234567890;
+
         boolean isAvailable = true;
 
         String productName = "Product A";
 
+        System.out.println("Age: " + age);
         System.out.println("Gender: " + gender);
         System.out.println("Available Products: " + availableProducts);
         System.out.println("Price: " + price);
+        System.out.println("Pi: " + piDouble);
         System.out.println("Is Available: " + isAvailable);
         System.out.println("Product Name: " + productName);
-        System.out.println("Pi: " + piDouble);
 
 
         // Use the Android Log class to log messages at different log levels:
