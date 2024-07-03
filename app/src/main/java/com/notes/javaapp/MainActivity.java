@@ -11,13 +11,12 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Define a variable named TAG to identify the source of the log messages, typically set to the name of the current class.
+    private static final String TAG = "MainActivity";
 
     // It maintains its unique state for each object created from this class
     // It is accessible through any non-static method within the same class
     String instanceVariable = "This is a global variable";
-
-    // Define a variable named TAG to identify the source of the log messages, typically set to the name of the current class.
-    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Price: " + price);
         System.out.println("Pi: " + piDouble);
         System.out.println("Is Available: " + isAvailable);
+        System.out.println("Phone Number: " + phoneNumber);
         System.out.println("Product Name: " + productName);
 
 
@@ -69,6 +69,27 @@ public class MainActivity extends AppCompatActivity {
 
         calculateArea(58, 178);
         variableTest();
+
+        int id = 1434;
+        id = 3004;
+        // A new value can be reassigned to 'id'
+
+        String name = "Yesid";
+        name = "Axel";
+        // The 'name' reference now points to a new String object
+
+        // Once initialized, a final variable cannot change its value. It is constant and cannot be reallocated.
+        final int quantity = 45;
+        // quantity = 34; // This will cause a compilation error, as 'quantity' is final and cannot be reassigned
+
+        final String lastname = "Martinez";
+        // lastname = "Gomez"; // This will cause a build error, as 'lastname' is final and cannot be reassigned
+
+        System.out.println("Id: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Lastname: " + lastname);
+
     }
 
     public void calculateArea(int base, int height) {
