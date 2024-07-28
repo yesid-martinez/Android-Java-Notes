@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Java App</string>
+    <string name="app_name" translatable="false">Green Garden</string>
+    <string name="logo_description">Green Garden Main Logo</string>
 </resources>

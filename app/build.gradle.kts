@@ -37,4 +37,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    val splashScreenVersion = "1.0.1";
+
+    implementation("androidx.core:core-splashscreen:$splashScreenVersion")
 }

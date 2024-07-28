@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="primary_base">#0E4841</color>
+    <color name="primary_dark">#013A33</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_background">#F0F7F6</color>
+    <color name="dark_background">#3D3D3D</color>
+    <color name="lightStatusBar">#F0F7F6</color>
+    <color name="darkStatusBar">#013A33</color>
 </resources>
